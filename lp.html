@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIWA TORII PORTFOLIO_lp</title>
+    <meta name="description" content="lp">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/lp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <p><img src="images/lp-flower@2x.png" alt="黄色の花"></p>
+                <h1>LP</h1>
+            </div>
+        </header>
+
+        <section>
+            <h2>【美容院】</h2>
+            <div class="image-container">
+                <div class="image-wrap">
+                    <picture class="open">
+                        <source srcset="images/lp-pic-sp@2x.png" media="(max-width:800px)">
+                        <img src="images/lp-pic@2x.png" alt="美容院">
+                    </picture>
+                    <p class="hide">【美容院】</p>
+                </div>
+                <div class="image-wrap2">
+                    <p>coming soon...</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="overlay"></div>
+                <div class="main">
+                    <div class="content">
+                        <p class="image"><img src="images/modal-lp@2x.png" alt=""></p>
+                        <div class="content-text">
+                            <div class="text">
+                                <p class="text1">担当</p>
+                                <p>LPデザイン</p>
+                            </div>
+                            <div class="text">
+                                <p class="text1">ツール</p>
+                                <p>adobe illstrator</p>
+                            </div>
+                            <div class="text">
+                                <p class="text1">期間</p>
+                                <p>約２週間</p>
+                            </div>
+                            <div class="text">
+                                <p class="text1">制作意図</p>
+                                <p>約２週間</p>
+                            </div>
+                        </div>
+                        <div class="close">CLOSE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="contact-btn">
+                    <div class="btn-2">
+                        <img src="images/bird-2@2x.png" alt="お問い合わせの青い鳥">
+                        <a href="contact.html">お問い合わせはこちら</a>
+                    </div>
+                </div>
+                <div class="footer-wrap">
+                    <p class="footer-title"><a href="index.html">miwa Torii design</a></p>
+                    <ul class="footer-nav">
+                        <li><a href="banner.html">BANNER<span></span></a></li>
+                        <li><a href="website.html">WEBSITE<span></span></a></li>
+                    </ul>
+                    <p class="footer-title-sp"><a href="index.html">miwa Torii design</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        $(function () {
+            var a = $('.container'),
+                b = $('.overlay'),
+                c = $('.open'),
+                d = $('.close');
+
+            //OPENをクリックでモーダルを開く
+            $('.open').on('click', function () {
+                $('.container').fadeIn();
+                var modalheight = $('.container .main').get(0).scrollHeight;
+                $('.container .overlay').height(modalheight + 70);
+            });
+
+            //CLOSEをクリックでモーダルを閉じる
+            d.on('click', function () {
+                a.fadeOut();
+            });
+
+            //モーダルの周りをクリックで閉じる
+            b.on('click', function () {
+                a.fadeOut();
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,429 @@
+@charset "utf-8";
+body {
+    position: relative;
+    font-family: 'Futura pt','Avenir','Helvetica Neue','Helvetica','Arial',"游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
+main{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header{
+    padding: 100px 20px;
+}
+.title{
+    display: flex;
+}
+.title img{
+    width: 58.62px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-top: 50px;
+}
+h2{
+    text-align: right;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+.hide{
+    display: none;
+}
+.image-wrap{
+    display: flex;
+    margin-bottom: 20px;
+}
+.image-wrap2{
+    display: flex;
+}
+.image-container :nth-child(odd){
+    flex-direction: row-reverse;
+}
+.image-wrap2{
+    width: 660px;
+    background-color: #999;
+    padding: 180px 0;
+    cursor: pointer;
+}
+.image-wrap2 p{
+    color: #fff;
+    font-size: 24px;
+    margin: 0 auto;
+}
+.image-wrap :hover{
+    opacity: 0.8;
+}
+.image-wrap2 :hover{
+    opacity: 0.8;
+}
+/* ーーーーーモーダルーーーーー */
+.open{
+    width: 660px;
+    cursor: pointer;
+}
+/* クリックすると表示される部分 */
+.container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+  }
+  .overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    z-index: 1;
+  }
+
+  .main{
+    position: relative;
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 2;
+  }
+  .content{
+    padding: 100px 25px;
+
+  }
+  .image{
+    width: 400px;
+    margin: 0 auto;
+
+ }
+.content-text{
+    margin: 80px auto;
+    width: 500px;
+}
+ .text{
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+.text:last-child{
+    border-bottom: none;
+}
+.text1{
+    text-align-last: justify;
+    width: 72px;
+}
+.text p{
+    line-height: 1.8;
+    font-size: 18px;
+    padding: 10px 0 10px;
+   
+}
+
+.text p:last-child{
+    padding-left: 75px;/* 用途とデザインの間 */
+} 
+.close{
+    width: 100px;
+    border: 1px solid #333;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* フッター */
+/* お問い合せボタン  */
+footer{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 100px 0 80px;
+}
+.btn-2{
+    text-align: center;
+  }
+.btn-2 a{
+    background: #99c67e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 220px; */
+    padding: 10px 42.5px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 5px 5px 0 #83c1a6;
+    border-radius: 50px;
+}
+.btn-2 a:hover {
+    background-color: #83c1a6;
+    box-shadow: 0 0 0;
+    transform: translate(5px, 5px);
+}
+.btn-2 a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transition: 0.2s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.btn-2 img{
+    width: 102.2px;
+}
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 115px 10px 0;
+}
+.footer-title{
+    color:#938159;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+}
+
+/* フッターナブボタン */
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用*/
+}
+
+.footer-nav li a{
+    display: flex;
+    align-items: center;
+    padding:10px 30px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+/* 三角矢印 */
+.footer-nav span{
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+    border-color: #333;
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.footer-nav li{
+    margin-bottom:20px;
+    margin-left: 10px;
+}
+.footer-nav li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 1px;
+    background:#333;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+.footer-nav li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+.footer-title-sp{
+    display: none;
+}
+
+@media screen and (max-width:800px){
+    main{
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+    header{
+        padding: 30px 20px 0;
+    }
+    .image-wrap{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 250px;
+        padding-bottom: 50px;
+    }
+    .image-wrap2{
+        display: block;
+        text-align: center;
+        width: 250px;
+        background-color: #999;
+        padding: 110px 0;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    .image-container :nth-child(odd){
+        flex-direction: column;
+    }
+    h2{
+        display: none;
+    }
+    .hide{
+        display: block;
+    }
+    .title{
+        display: block;
+        padding: 60px 0 20px;
+    }
+    .title img{
+        width: 31.9px;
+        position: absolute;
+        left: 20%;
+        top: 3%;
+    }
+    h1{
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: center;
+        position: relative;
+    }
+    /* タイトル下の線 */
+    h1::before{
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 15px);
+        width: 26px;
+        height: 1px;
+        content: '';
+        background: #333;
+    }
+    .open{
+        width: 250px;
+        cursor: pointer;
+    }
+    /* モーダル */
+    .container{
+        position: fixed;
+        overflow: scroll;
+        height: 100%; /* 高さ100％の中で要素がスクロールする */
+        z-index: 100;
+    }
+    .overlay{
+        height: 100%;
+        z-index: 0;
+    }
+    .main{
+        max-width: 80%;
+        margin-top: 40px;
+    }
+    .content{
+        padding: 25px 25px;
+    }
+    .image{
+        width: 80%;
+    }
+    .content-text{
+        margin: 40px auto;
+        width: 80%;
+    }
+    .text p{
+        font-size: 16px;
+        padding: 5px 0 5px;
+    }
+    .text p:last-child{
+        padding-left: 60px;/* 用途とデザインの間 */
+    }
+
+    .image-container{
+        padding-top: 60px;
+    }
+    .image-wrap2 p{
+        color: #fff;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    /* お問い合わせボタン */
+    .btn-2 a{
+        background: #99c67e;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 23.45px; /* ボタンの大きさ */
+        color: #fff;
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 5px 5px 0 #83c1a6;
+        border-radius: 50px;
+    }
+    .btn-2 img{
+        width: 64.13px;
+    }
+    footer{
+        padding: 100px 0 20px;
+    }
+    .footer-wrap{
+        display: block;
+        padding: 30px 10px 0;
+        text-align: center;
+    }
+    .footer-nav li a{
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+    }
+    /* 三角矢印 */
+    .footer-nav span{
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #333333;
+        border-right: 2px solid #333333;
+        transform: rotate(45deg);
+        border-color: #333;
+        display: flex;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .footer-title{
+        display: none;
+    }
+    .footer-title-sp{
+        display: block;
+        color: #938159;
+        font-size: 13px;
+        padding-top: 30px;
+    }
+
+}
+@media screen and (max-width:375px){
+    .content-text{
+        width: 90%;
+    }
+    .text p:last-child{
+        padding-left: 50px;/* 用途とデザインの間 */
+    }
+}

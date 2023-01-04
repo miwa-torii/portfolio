@@ -1,0 +1,193 @@
+@charset "utf-8";
+body {
+    position: relative;
+    font-family: 'Futura pt','Avenir','Helvetica Neue','Helvetica','Arial',"游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+    }
+    
+header{
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 180px;
+}
+h1{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+h2 {
+    position: relative;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  
+  h2:before {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 30px);
+    width: 50px;
+    height: 1px;
+    content: '';
+    background: #333;
+  }
+.header-text{
+    font-size: 18px;
+    padding-top: 50px;
+}
+.leaf1{
+    width: 346.6px;
+    /* width: 25.3%; */
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.br-sp{
+    display: none;
+}
+
+/* ボタン */
+
+.contact-btn img{
+    width: 17.8px;
+    padding-right: 10px;
+}
+.contact-btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 183px;
+    padding: 10px 10px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #58412a;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+    font-family:"游ゴシック体";
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+.contact-btn a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 13px 25px -5px rgb(88 65 42 0.4), 0 0 5px rgb(88 65 42 0.4);
+}
+.contact-btn{
+    padding-top: 50px;
+
+}
+/* お問い合せフォーム */
+form{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.form-container{
+    width: 81.48%;
+    margin: 0 auto;
+    background-color: rgba(169, 142, 110, 0.6);
+    margin-top: 60px;
+    padding: 60px 0;
+}
+.form-btn{
+    max-width: 570px; /* 入力欄の幅 */
+    margin: 0 auto;
+}
+.item{
+    margin-bottom: 40px;
+    text-align: left;
+}
+.label{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+.inputs{
+    width: 570px;
+    height: 60px;
+    border: none;
+}
+.inputs-2{
+    width: 570px;
+    height: 260px;
+    border: none;
+}
+.btn-area{
+    text-align: center;
+    margin: 70px 0;
+}
+input[type="submit"] {
+    padding: 17px 108.7px;
+    border: 1px solid #333;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    background: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+input[type="submit"]:hover {
+    background: #58412a;
+    cursor: pointer;
+    color: #fff;
+
+  }
+  @media screen and (max-width:1100px){
+    .leaf1{
+        width: 31.5%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+    .form-container{
+        width: 80%;
+    }
+  }
+  @media screen and (max-width:800px){
+    .leaf1{
+        display: none;
+    }
+    header{
+        padding-top: 80px;
+    }
+    .br-sp{
+        display: block;
+    }
+    /* お問い合せフォーム */
+    .form-container{
+        width: 100%;
+        background-color: rgba(169, 142, 110, 0.6);
+        margin-top: 60px;
+    }
+    .form-btn{
+        max-width: 320px; /* 入力欄の幅 */
+        margin: 0 auto;
+    }
+   
+    .inputs{
+        width: 320px;
+        height: 38px;
+    }
+    .inputs-2{
+        width: 320px;
+        height: 220px;
+    }
+    input[type="submit"] {
+        padding: 13.5px 81.4px;
+        border: 1px solid #333;
+        border-radius: 42px;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        background: #fff;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+    
+
+  }
+
+  
