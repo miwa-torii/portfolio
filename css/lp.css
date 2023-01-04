@@ -200,6 +200,49 @@ footer{
 }
 
 /* フッターナブボタン */
+
+.footer-title a{
+    display: flex;
+    align-items: center;
+    color:#938159;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    padding:10px 30px;
+    position: relative;
+}
+/* 三角矢印 */
+.footer-title span{
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    transform: rotate(45deg);
+    border-color: #938159;
+    display: flex;
+    margin-left: 10px;
+  }
+  .footer-title a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形*/
+    width: 80%;
+    height: 1px;
+    background:#938159;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+  }
+  .footer-title a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+  }
+  
+  /* ___________________________________ */
+
 .footer-nav {
     display: flex;
     flex-wrap: wrap;/*スマホ表示折り返し用*/

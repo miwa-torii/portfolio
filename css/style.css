@@ -31,22 +31,23 @@ body {
 }
 
 .top-scroll div {
-    height: 500vh;/* スクロールできる量 */
+    height: 700vh;/* スクロールできる量 */
 }
 
 header {
     max-width: 1080px;
     margin: 0 auto;
     position: relative;
+    padding: 0 20px;
 }
 .scroll-box{
     display: flex;/* 木のイラストとアイコンを横並び */
     opacity: 0;
+    transition: 2s;
     
 }
 .scroll-box.show{
     opacity: 1;
-    transition: 1s;
 }
 
 .top-image {
@@ -411,21 +412,18 @@ h2 span {
 
 /* 箱の真ん中配置 */
 .about-wrap1 {
-    max-width: 1080px;
+    max-width: 79.06%;
+    /* max-width: 1080px; */
     margin: 0 auto;
-    padding: 0 0 50px 1.46%;
+    /* margin-left: 100px; */
+    /* padding: 0 0 50px 1.46%; */
+    padding-bottom: 50px;
     position: relative;
 }
 
 .about-title {
     padding-bottom: 100px;
 }
-
-/* .about-text{
-    1100以下でこの幅を入れて、
-    テキストとイラストがぶつからないようにする
-    width: 596.7px;
-} */
 
 .about-text-sp {
     display: none;
@@ -464,7 +462,7 @@ h2 span {
 .about-pic {
     position: absolute;
     top: 0;
-    right: -10%;
+    right: -3%;
     width: 483.3px;
 }
 
@@ -497,7 +495,7 @@ h2 span {
 
 .about-wrap2-text {
     max-width: 1080px;
-    padding-left: 135px;
+    padding: 0 100px;
     font-size: 18px;
     line-height: 1.75;
 }
@@ -542,7 +540,7 @@ h2 span {
 
 .btn-wrap {
     position: absolute;
-    right: 10%;
+    right: 13%;
     bottom: 5%;
 }
 
@@ -584,17 +582,19 @@ footer p {
         display: flex;
         justify-content: center;
     }
+    .about-text{
+        width: 60%;
+    }
 
 }
 
 @media screen and (max-width:800px) {
     header {
         max-width: 800px;
-        margin: 0 auto;
-        position: relative;
-        /* padding: 0 20px; */
+        padding: 0;
         display: block;
     }
+    
 
     .orange,
     .perple,
@@ -842,8 +842,8 @@ footer p {
 
     .about-icon {
         position: absolute;
-        top: 23%;
-        right: 10%;
+        top: 32%;
+        right: 23%;
     }
 
     .about-pic {
@@ -896,7 +896,8 @@ footer p {
 
     .about-wrap2-text {
         max-width: 800px;
-        padding-left: 0;
+        padding: 0 10px;
+        margin: 0 auto;
         text-align: center;
         font-size: 15px;
     }
@@ -946,6 +947,10 @@ footer p {
     .leaf4 {
         display: none;
     }
+    .icon-f-sp {
+        display: block;
+        padding: 0 0 50px 5px;
+    }
 
 }
 
@@ -962,16 +967,28 @@ footer p {
         margin: 0 auto;
         padding-bottom: 65px;
     }
+    .about-icon {
+        position: absolute;
+        top: 20%;
+        right: 15%;
+    }
 
     .btn-wrap img {
         width: 64.1px;
     }
-    .br-sp {
+    .future-text-sp,.br-sp {
         display: block;
+    }
+    .future-text-pc {
+        display: none;
     }
 }
 
 @media screen and (max-width:430px) {
+    .scroll-box{
+        opacity: 1;
+        
+    }
     .sp-title {
         display: block;
         padding-left: 10%;
@@ -996,15 +1013,16 @@ footer p {
     .top-scroll{
         display: none;
     }
+    
     .about-icon {
         position: absolute;
-        top: 28%;
+        top: 18%;
         right: 13%;
     }
 
     .icon-f-sp {
         display: block;
-        padding: 0 0 10px 5px;
+        padding: 0 0 40px 5px;
     }
 
     .icon-i-sp {

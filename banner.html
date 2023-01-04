@@ -18,7 +18,31 @@
             <div class="title">
                 <p><img src="images/banner-flower@2x.png" alt="ピンクの花"></p>
                 <h1>BANNER</h1>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="globalMenuSp">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">LP</a></li>
+                        <li><a href="#">WEBSITE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="hum_menu_btn"><span></span></div>
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a href="index.html?top">HOME</a></li>
+                        <li><a href="lp.html">LP</a></li>
+                        <li><a href="website.html">WEBSITE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav> -->
             </div>
+
         </header>
         <section>
             <div class="image-wrap">
@@ -220,7 +244,7 @@
                 </div>
             </div>
             <div class="footer-wrap">
-                <p class="footer-title"><a href="index.html">miwa Torii design</a></p>
+                <p class="footer-title"><a href="index.html?top">HOME<span></span></a></p>
                 <ul class="footer-nav">
                     <li><a href="lp.html">LP<span></span></a></li>
                     <li><a href="website.html">WEBSITE<span></span></a></li>
@@ -267,6 +291,21 @@
                 a.fadeOut();
 
             });
+            $(function () {
+                $('.hamburger').click(function () {
+                    $(this).toggleClass('active');
+
+                    if ($(this).hasClass('active')) {
+                        $('.globalMenuSp').addClass('active');
+                    } else {
+                        $('.globalMenuSp').removeClass('active');
+                    }
+                });
+            });
+            // $('.hum_menu_btn,.sp_nav li').on('click', function () {
+            //     $('.sp_nav').fadeToggle();
+            //     $('.hum_menu_btn').toggleClass('open')
+            // });
         });
 
     </script>

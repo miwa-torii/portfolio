@@ -62,15 +62,16 @@
                     <p class="small-title">私の想い</p>
                 </div>
                 <div class="future-text">
-                    <p>植物が育つには<br class="br-sp">水や栄養、日光などが必要です。<br class="br-pc">
+
+                    <p>植物が育つには<br class="br-sp">水や栄養、日光などが必要です。<br>
                         <span><br class="br-sp">あなたの木【想い】</span>に<br class="br-sp">必要なデザインは何なのか<br>
                         一緒に見つけて大きく育てていきましょう。
                     </p>
-                    <p class="future-text-pc">常に成長し、たくさんの花を咲かせて、<br class="br-pc">
-                        <span><br class="br-sp">“あなたの想いに花を添えるデザイン”</span>を<br class="br-sp">制作して参ります。
+                    <p class="future-text-pc">常に成長し、たくさんの花を咲かせて、<br>
+                        <span>“あなたの想いに花を添えるデザイン”</span>を制作して参ります。
                     </p>
-                    <p class="future-text-sp">常に成長し、たくさんの花を咲かせて、<br class="br-pc">
-                        <span><br class="br-sp">“あなたの想いに花を添えるデザイン”</span>を<br class="br-sp">制作して参ります。
+                    <p class="future-text-sp">常に成長し、たくさんの花を咲かせて、<br>
+                        <span>“あなたの想いに花を添えるデザイン”</span>を<br>制作して参ります。
                     </p>
                 </div>
                 <img class="leaf2" src="images/leaf2@2x.png" alt="葉">
@@ -225,21 +226,34 @@
                 //スクロール位置を取得
                 var scrollY = $('.top-scroll').scrollTop();
                 //background-size+(スクロール位置/3)
-                var bgSize = 70 + (scrollY / 3);
+                var bgSize = 70 + (scrollY / 2);
 
                 //bgSizeが700より小さければ
-                if (bgSize < 700) {
+                if (bgSize < 900) {
                     //background-sizeにbgSizeを設定
                     $('.top-scroll').css('background-size', bgSize + '%');
 
                 } else {
-                    $('.top-scroll').fadeOut();
+                    $('.top-scroll').fadeOut('',
+                        function () {
+                            $('.scroll-box').addClass('show');
+                        });
                     $('body').removeClass('over_flow_hidden');
-                    $('.scroll-box').addClass('show');
+                    // $('.top-scroll').fadeOut();
+                    // $('body').removeClass('over_flow_hidden');
+                    // $('.scroll-box').addClass('show');
                     // $('.scroll-box').hide().fadeIn('slow');
 
                 }
             });
+            // ページのURLに名前をつけるイメージ
+            if (location.search == '?top') {
+                $('.top-scroll').fadeOut('',
+                    function () {
+                        $('.scroll-box').addClass('show');
+                    });
+                $('body').removeClass('over_flow_hidden');
+            }
         });
 
     </script>
