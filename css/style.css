@@ -205,6 +205,9 @@ nav ul li {
     font-size: 16px;
     margin-bottom: 60px;
 }
+nav ul li:hover{
+    color: #83c1a6;
+}
 
 .future {
     max-width: 1080px;
@@ -468,7 +471,7 @@ h2 span {
 
 .about-icon {
     position: absolute;
-    right: 25%;
+    right: 3%;
     top: 70%;
 }
 
@@ -585,17 +588,30 @@ footer p {
     .about-text{
         width: 60%;
     }
+    .about-pic {
+        top: 17%;
+        right: 2%;
+        width: 400px;
+    }
+    .leaf3 {
+        top: -25%;
+    }
+}
+@media screen and (max-width:1000px){
+    .about-pic {
+        top: 23%;
+        right: -3%;
+        width: 400px;
+    }
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     header {
         max-width: 800px;
         padding: 0;
         display: block;
     }
-    
-
     .orange,
     .perple,
     .pink,
@@ -682,13 +698,13 @@ footer p {
         display: none;
     }
 
-    /* .br-pc {
+    .br-pc {
         display: none;
-    } */
+    }
 
-    /* .br-sp {
+    .br-sp {
         display: block;
-    } */
+    }
 
     .leaf2 {
         display: none;
@@ -752,10 +768,6 @@ footer p {
     .work-btn-sp {
         display: block;
     }
-
-
-
-
     .btn-1-sp {
         display: flex;
         justify-content: space-evenly;
@@ -836,9 +848,9 @@ footer p {
         position: static;
     }
 
-    .bout-pic-wrap {
+    /* .about-pic-wrap {
         position: relative;
-    }
+    } */
 
     .about-icon {
         position: absolute;
@@ -848,7 +860,7 @@ footer p {
 
     .about-pic {
         position: static;
-        /* width: 266.6px; */
+        width: 266.6px;
         margin: 0 auto;
         padding-bottom: 65px;
     }
@@ -1007,6 +1019,12 @@ footer p {
         padding-left: 30px;
 
     }
+    .about-pic {
+        position: static;
+        /* width: 266.6px; */
+        margin: 0 auto;
+        padding-bottom: 65px;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -1028,6 +1046,13 @@ footer p {
     .icon-i-sp {
         display: block;
     }
+    .about-text-sp {
+        /* display: block;
+        width: 310px;
+        margin: 0 auto; */
+        padding: 0 10px;
+    }
+    
 
 
 }

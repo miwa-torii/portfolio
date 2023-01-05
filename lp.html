@@ -18,6 +18,20 @@
             <div class="title">
                 <p><img src="images/lp-flower@2x.png" alt="黄色の花"></p>
                 <h1>LP</h1>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="globalMenuSp">
+                    <ul>
+                        <li><a href="index.html?top">HOME</a></li>
+                        <li><a href="banner.html">BANNER</a></li>
+                        <li><a href="website.html">WEBSITE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -79,7 +93,7 @@
                         <li><a href="banner.html">BANNER<span></span></a></li>
                         <li><a href="website.html">WEBSITE<span></span></a></li>
                     </ul>
-                    <p class="footer-title-sp"><a href="index.html?top">miwa Torii design</a></p>
+                    <p class="footer-title-sp">miwa Torii design</p>
                 </div>
             </div>
         </footer>
@@ -107,6 +121,17 @@
             //モーダルの周りをクリックで閉じる
             b.on('click', function () {
                 a.fadeOut();
+            });
+            $(function () {
+                $('.hamburger').click(function () {
+                    $(this).toggleClass('active');
+
+                    if ($(this).hasClass('active')) {
+                        $('.globalMenuSp').addClass('active');
+                    } else {
+                        $('.globalMenuSp').removeClass('active');
+                    }
+                });
             });
         });
 

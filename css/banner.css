@@ -25,7 +25,7 @@ h1{
 }
 
 /* ハンバーガーメニュー */
-/*　ハンバーガーボタン　*/
+/*ハンバーガーボタン*/
 .hamburger {
   display : block;
   position: fixed;
@@ -63,8 +63,8 @@ h1{
   top : 16px;
   left: 6px;
   background :#fff;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform   : rotate(-45deg);
+  /* -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg); */
   transform        : rotate(-45deg);
 }
 
@@ -72,8 +72,8 @@ h1{
 .hamburger.active span:nth-child(3) {
   top: 16px;
   background :#fff;
-  -webkit-transform: rotate(45deg);
-  -moz-transform   : rotate(45deg);
+  /* -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg); */
   transform        : rotate(45deg);
 }
 nav.globalMenuSp {
@@ -84,26 +84,26 @@ nav.globalMenuSp {
   color: #fff;
   background: rgba(0,0,0,0.7);
   text-align: center;
-  width: 50%;
+  width: 300px;
+  height: 330px;
   opacity: 0;
   transition: opacity .6s ease, visibility .6s ease;
 }
 
 nav.globalMenuSp ul {
-  margin: 0 auto;
-  padding: 0;
   width: 100%;
+  margin-top: 65px;
 }
 
 nav.globalMenuSp ul li {
   list-style-type: none;
-  padding: 0;
+  padding: 1rem 0;
   width: 100%;
   transition: .4s all;
+  margin-left: auto;
+  margin-right: auto;
 }
-nav.globalMenuSp ul li:last-child {
-  padding-bottom: 0;
-}
+
 nav.globalMenuSp ul li:hover{
   background :#ddd;
 }
@@ -111,7 +111,6 @@ nav.globalMenuSp ul li:hover{
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
-  padding: 1em 0;
   letter-spacing: 0.1em;
 }
 
@@ -120,81 +119,6 @@ nav.globalMenuSp.active {
   opacity: 100;
 
 }
-/* .menu{
-  position: fixed;
-  top: 0;
-  right: 0;
-} */
-/* .hum_menu_btn{
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 24px;
-  cursor: pointer;
-  height: 33px;
-  z-index: 9999;
-} */
-/* .hum_menu_btn span{
-  background-color: #fff;
-  display: block;
-  height: 3px;
-  width: 33px;
-  position: relative;
-  transition: 0.3s;
-  top: 10px;
-} */
-/* .hum_menu_btn span::before,
-.hum_menu_btn span::after{
-  content:'';
-  background-color: #fff;
-  display: block;
-  height: 3px;
-  width: 33px;
-  position: absolute;
-  transition: 0.3s;
-
-} */
-/* .hum_menu_btn span::before{
-  bottom: 10px;
-}
-.hum_menu_btn span::after{
-  top: 10px;
-}
-.open span{
-  background: transparent;
-}
-.open span::before{
-  bottom: 0px;
-  transform: rotate(45deg);
-}
-.open span::after{
-  top: 0px;
-  transform: rotate(135deg);
-} */
-/* .sp_nav{
-  height: 100vh;
-  background:rgba(0,0,0,0.8) ;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 15%;
-  z-index: 1;
-  padding: 100px 40px;
-
-}
-.sp_nav ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-.sp_nav ul li{
-  color: #fff;
-  text-align: center;
-  font-size: 17px;
-  padding: 15px 0;
-  letter-spacing: 0.1em;
-} */
 
 
 .image-wrap{
@@ -284,9 +208,10 @@ nav.globalMenuSp.active {
     padding: 10px 0;
     margin: 0 auto;
     margin-top: 50px;
+    transition: 0.3s;
 }
-.close :hover{
-  background-color: #333;
+.close:hover{
+  background-color: #555;
   color: #fff;
 }
  
@@ -459,7 +384,7 @@ footer{
     width: 34.6px;
     position: absolute;
     left: 20%;
-    top: 3%;
+    top: 45%;
   }
     h1{
       font-size: 18px;

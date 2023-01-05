@@ -31,6 +31,101 @@ h2{
 .hide{
     display: none;
 }
+/* ハンバーガーメニュー */
+/*ハンバーガーボタン*/
+.hamburger {
+    display : block;
+    position: fixed;
+    z-index : 9999;
+    right : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background : #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    background :#fff;
+    /* -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg); */
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    background :#fff;
+    /* -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg); */
+    transform        : rotate(45deg);
+  }
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    right : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+  
+  nav.globalMenuSp ul {
+    width: 100%;
+    margin-top: 65px;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 1rem 0;
+    width: 100%;
+    transition: .4s all;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  nav.globalMenuSp ul li:hover{
+    background :#ddd;
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    letter-spacing: 0.1em;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+  
+  }
 .image-wrap{
     display: flex;
     margin-bottom: 20px;
@@ -330,10 +425,10 @@ footer{
         padding: 60px 0 20px;
     }
     .title img{
-        width: 31.9px;
+        width: 34.9px;
         position: absolute;
         left: 20%;
-        top: 3%;
+        top: 6%;
     }
     h1{
         font-size: 18px;

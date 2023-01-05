@@ -9,6 +9,7 @@
     <meta name="description" content="miwa torii portfolio">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,6 +24,20 @@
         <div class="contact-btn">
             <a href=""><img src="images/icon-i_white@2x.png">instagramはコチラ</a>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="index.html?top">HOME</a></li>
+                <li><a href="banner.html">BANNER</a></li>
+                <li><a href="lp.html">LP</a></li>
+                <li><a href="website.html">WEBSITE</a></li>
+            </ul>
+        </nav>
         <img class="leaf1" src="images/leaf1@2x.png" alt="葉">
     </header>
 
@@ -47,6 +62,20 @@
             <input type="submit" value="送信する">
         </div>
     </form>
+
+    <script>
+        $(function () {
+            $('.hamburger').click(function () {
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('.globalMenuSp').addClass('active');
+                } else {
+                    $('.globalMenuSp').removeClass('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 
