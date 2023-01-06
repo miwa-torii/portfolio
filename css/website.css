@@ -95,6 +95,7 @@ h2{
     height: 330px;
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
+    visibility: hidden;
   }
   
   nav.globalMenuSp ul {
@@ -124,6 +125,7 @@ h2{
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
     opacity: 100;
+    visibility: visible;
   
   }
 .image-wrap{

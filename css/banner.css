@@ -88,6 +88,7 @@ nav.globalMenuSp {
   height: 330px;
   opacity: 0;
   transition: opacity .6s ease, visibility .6s ease;
+  visibility: hidden;/* 隠してリンクを押せないようにする */
 }
 
 nav.globalMenuSp ul {
@@ -117,6 +118,7 @@ nav.globalMenuSp ul li a {
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {
   opacity: 100;
+  visibility: visible;/* 隠していたのを表示させる */
 
 }
 

@@ -622,9 +622,9 @@ footer p {
 
     .top-image img {
         width: 100%;
-        height: 700px;
-        object-fit: cover;
-        object-position: 25% 100%;
+        /* height: 700px; */
+        /* object-fit: cover;
+        object-position: 25% 100%; */
     }
 
     .icon {
@@ -1000,7 +1000,12 @@ footer p {
 @media screen and (max-width:430px) {
     .scroll-box{
         opacity: 1;
-        
+    }
+    .top-image img {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: 25% 100%;
     }
     .sp-title {
         display: block;

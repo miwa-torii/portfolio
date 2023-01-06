@@ -75,18 +75,14 @@ h2{
     top : 16px;
     left: 6px;
     background :#fff;
-    /* -webkit-transform: rotate(-45deg);
-    -moz-transform   : rotate(-45deg); */
-    transform        : rotate(-45deg);
+    transform: rotate(-45deg);
   }
   
   .hamburger.active span:nth-child(2),
   .hamburger.active span:nth-child(3) {
     top: 16px;
     background :#fff;
-    /* -webkit-transform: rotate(45deg);
-    -moz-transform   : rotate(45deg); */
-    transform        : rotate(45deg);
+    transform: rotate(45deg);
   }
   nav.globalMenuSp {
     position: fixed;
@@ -100,6 +96,7 @@ h2{
     height: 330px;
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
+    visibility: hidden;
   }
   
   nav.globalMenuSp ul {
@@ -129,6 +126,7 @@ h2{
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
     opacity: 100;
+    visibility: visible;
   
   }
 .image-wrap{
