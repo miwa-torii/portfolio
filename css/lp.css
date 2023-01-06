@@ -48,8 +48,8 @@ h2{
     height: 42px;
     cursor: pointer;
     text-align: center;
-  }
-  .hamburger span {
+}
+.hamburger span {
     display : block;
     position: absolute;
     width   : 30px;
@@ -59,32 +59,32 @@ h2{
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition   : 0.3s ease-in-out;
     transition        : 0.3s ease-in-out;
-  }
-  .hamburger span:nth-child(1) {
+}
+.hamburger span:nth-child(1) {
     top: 10px;
-  }
-  .hamburger span:nth-child(2) {
+}
+.hamburger span:nth-child(2) {
     top: 20px;
-  }
-  .hamburger span:nth-child(3) {
+}
+.hamburger span:nth-child(3) {
     top: 30px;
-  }
+}
   
-  /* ナビ開いてる時のボタン */
-  .hamburger.active span:nth-child(1) {
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
     top : 16px;
     left: 6px;
     background :#fff;
     transform: rotate(-45deg);
-  }
+}
   
-  .hamburger.active span:nth-child(2),
-  .hamburger.active span:nth-child(3) {
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
     top: 16px;
     background :#fff;
     transform: rotate(45deg);
-  }
-  nav.globalMenuSp {
+}
+nav.globalMenuSp {
     position: fixed;
     z-index : 2;
     top  : 0;
@@ -97,39 +97,40 @@ h2{
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
     visibility: hidden;
-  }
+}
   
-  nav.globalMenuSp ul {
+nav.globalMenuSp ul {
     width: 100%;
     margin-top: 65px;
-  }
+}
   
-  nav.globalMenuSp ul li {
+nav.globalMenuSp ul li {
     list-style-type: none;
     /* padding: 1rem 0; */
     width: 100%;
     transition: .4s all;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   
-  nav.globalMenuSp ul li:hover{
+nav.globalMenuSp ul li:hover{
     background :#ddd;
-  }
+}
   
-  nav.globalMenuSp ul li a {
+nav.globalMenuSp ul li a {
     display: block;
     color: #fff;
     letter-spacing: 0.1em;
     padding: 1rem 0;/* 上下の余白部分もクリック領域にする */
-  }
+}
   
-  /* このクラスを、jQueryで付与・削除する */
-  nav.globalMenuSp.active {
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
     opacity: 100;
-    visibility: visible;
-  
-  }
+    visibility: visible;/* 隠していたのを表示させる */
+}
+
+
 .image-wrap{
     display: flex;
     margin-bottom: 20px;
@@ -563,6 +564,21 @@ footer{
 
 
 }
+@media screen and (max-width:500px){
+    /* スマホ版ハンバーガーメニュー */
+  nav.globalMenuSp {
+    /* 画面いっぱい */
+    width: 100%;
+    height: 100vh;
+  }
+  nav.globalMenuSp ul {
+    margin-top: 272px; /* リストを中央に（デバイスの高さーリストの高さ/２） */
+  }
+  nav.globalMenuSp ul li a {
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width:375px){
     .content-text{
         width: 90%;
