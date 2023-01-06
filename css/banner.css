@@ -128,6 +128,8 @@ nav.globalMenuSp.active {
     padding: 0 20px;
     max-width: 1080px;
     margin: 0 auto;
+    z-index: 100;
+
 }
 
 /* ーーーーーモーダルーーーーー */
