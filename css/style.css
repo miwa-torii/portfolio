@@ -52,6 +52,7 @@ header {
 
 .top-image {
     z-index: 1;
+
 }
 
 .orange {
@@ -854,13 +855,13 @@ footer p {
 
     .about-icon {
         position: absolute;
-        top: 32%;
-        right: 23%;
+        top: 24%;
+        right: 30%;
     }
 
     .about-pic {
         position: static;
-        width: 266.6px;
+        width: 350px;
         margin: 0 auto;
         padding-bottom: 65px;
     }
@@ -1004,7 +1005,7 @@ footer p {
     .sp-title {
         display: block;
         padding-left: 10%;
-        margin-top: -100px;
+        margin-top: -120px;
 
     }
 
@@ -1021,7 +1022,7 @@ footer p {
     }
     .about-pic {
         position: static;
-        /* width: 266.6px; */
+        width: 266.6px;
         margin: 0 auto;
         padding-bottom: 65px;
     }
@@ -1034,7 +1035,7 @@ footer p {
     
     .about-icon {
         position: absolute;
-        top: 18%;
+        top: 24%;
         right: 13%;
     }
 
