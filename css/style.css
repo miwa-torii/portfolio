@@ -1027,7 +1027,7 @@ footer p {
     }
     .about-pic {
         position: static;
-        width: 266.6px;
+        width: 95%;
         margin: 0 auto;
         padding-bottom: 65px;
     }
@@ -1053,9 +1053,6 @@ footer p {
         display: block;
     }
     .about-text-sp {
-        /* display: block;
-        width: 310px;
-        margin: 0 auto; */
         padding: 0 10px;
     }
     

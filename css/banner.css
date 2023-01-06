@@ -98,7 +98,7 @@ nav.globalMenuSp ul {
 
 nav.globalMenuSp ul li {
   list-style-type: none;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   width: 100%;
   transition: .4s all;
   margin-left: auto;
@@ -113,6 +113,7 @@ nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
   letter-spacing: 0.1em;
+  padding: 1rem 0;/* 上下の余白部分もクリック領域にする */
 }
 
 /* このクラスを、jQueryで付与・削除する */
