@@ -3,11 +3,14 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    font-family: 'Futura pt', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic'
+body{
+    font-family: 'Futura PT','Helvetica','Arial',"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ','ＭＳ Ｐゴシック', 'MS PGothic';
 }
+
+/* body {
+    font-family: 'Futura PT', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic'
+} */
 
 .over_flow_hidden {
     overflow: hidden;
