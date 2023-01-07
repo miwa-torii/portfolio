@@ -234,7 +234,11 @@ nav.globalMenuSp.active {
     padding: 10px 0;
     margin: 0 auto;
     margin-top: 50px;
-  }
+}
+.close:hover{
+    background-color: #555;
+    color: #fff;
+}
 
 /* フッター */
 /* お問い合せボタン  */
