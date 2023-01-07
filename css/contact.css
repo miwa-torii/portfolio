@@ -205,6 +205,7 @@ form{
     letter-spacing: 0.1em;
     font-weight: 600;
 }
+/* 名前などの入力欄 */
 .inputs{
     width: 570px;
     height: 60px;
@@ -220,72 +221,82 @@ form{
     margin: 70px 0;
 }
 input[type="submit"] {
-    padding: 17px 108.7px;
-    border: 1px solid #333;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    background: #fff;
-    font-weight: 600;
-    transition: 0.3s;
-  }
+  appearance: none;/* inputタグに対するOSによって異なる標準的スタイルのリセット */
+  -webkit-appearance: none;
+}
+.btn-area input{
+  padding: 17px 108.7px;
+  border: 1px solid #333;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  background: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
   
 input[type="submit"]:hover {
-    background: #58412a;
-    cursor: pointer;
-    color: #fff;
-
-  }
+  background: #58412a;
+  cursor: pointer;
+  color: #fff;
+}
 
 @media screen and (max-width:1100px){
   .leaf1{
-      width: 31.5%;
-      position: absolute;
-      top: 10%;
-      left: 0;
+    width: 31.5%;
+    position: absolute;
+    top: 10%;
+    left: 0;
   }
   .form-container{
-      width: 80%;
+    width: 80%;
   }
 }
 @media screen and (max-width:800px){
   .leaf1{
-      display: none;
+    display: none;
   }
   header{
-      padding-top: 80px;
+    padding-top: 80px;
   }
   .br-sp{
-      display: block;
+    display: block;
   }
   /* お問い合せフォーム */
   .form-container{
-      width: 100%;
-      background-color: rgba(169, 142, 110, 0.6);
-      margin-top: 60px;
+    width: 100%;
+    background-color: rgba(169, 142, 110, 0.6);
+    margin-top: 60px;
   }
   .form-btn{
-      max-width: 320px; /* 入力欄の幅 */
-      margin: 0 auto;
-  }
+    max-width: 320px; /* 入力欄の幅 */
+    margin: 0 auto;
+  } 
    
   .inputs{
-      width: 320px;
-      height: 38px;
+    width: 320px;
+    height: 38px;
   }
   .inputs-2{
-      width: 320px;
-      height: 220px;
+    width: 320px;
+    height: 220px;
   }
-  input[type="submit"] {
-      padding: 13.5px 81.4px;
-      border: 1px solid #333;
-      border-radius: 42px;
-      font-size: 18px;
-      letter-spacing: 0.1em;
-      background: #fff;
-      font-weight: 600;
-      transition: 0.3s;
-  }  
+  .btn-area input{
+    padding: 15px 52.45px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    background: #58412a;
+    font-weight: 600;
+    color: #fff;
+  }
+    
+  /* input[type="submit"]:hover {
+    background: #58412a;
+    cursor: pointer;
+    color: #fff;
+  } */
+  
 }
 
 @media screen and (max-width:500px){

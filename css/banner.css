@@ -5,23 +5,23 @@ body {
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
 }
 header{
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 100px 20px;
-    position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  position: relative;
 }
 .title{
-    display: flex;
+  display: flex;
     
 }
 .title img{
-    width: 58.62px;
+  width: 58.62px;
 }
 h1{
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    padding-top: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding-top: 50px;
 }
 
 /* ------ハンバーガーメニュー------ */
@@ -125,61 +125,61 @@ nav.globalMenuSp.active {
 
 
 .image-wrap{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
-    padding: 0 20px;
-    max-width: 1080px;
-    margin: 0 auto;
-    z-index: 100;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  padding: 0 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  z-index: 100;
 }
 
 /* ------モーダル-------*/
-  .open{
-    cursor: pointer;
-  }
-  .open :hover{
-    opacity: 0.8;
-  }
-  /* クリックすると表示される部分 */
-  .container{
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-  }
-  .overlay{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    top: 0;
-    /* left: 0; */
-    z-index: 1;
-  }
+.open{
+  cursor: pointer;
+}
+.open :hover{
+  opacity: 0.8;
+}
+/* クリックすると表示される部分 */
+.container{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  /* left: 0; */
+  z-index: 2;
+}
 
-  .main{
-    position: relative;
-    text-align: center;
-    width: 500px;
-    margin: 0 auto;
-    background: #fff;
-    z-index: 2;
-    margin-top: 100px;
-  }
-  .content{
-    padding: 100px 25px;
-  }
-  .image{
-    width: 300px;
-    margin: 0 auto;
- }
+.main{
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  z-index: 3;
+  margin-top: 100px;
+}
+.content{
+  padding: 100px 25px;
+}
+.image{
+  width: 300px;
+  margin: 0 auto;
+}
 .content-text{
-    margin: 80px auto;
-    /* width: 500px; */
+  margin: 80px auto;
+  /* width: 500px; */
 }
 .text{
   display: flex;
@@ -206,14 +206,14 @@ nav.globalMenuSp.active {
   padding-left: 75px;
 }
 .close{
-    width: 100px;
-    border: 1px solid #333;
-    text-align: center;
-    cursor: pointer;
-    padding: 10px 0;
-    margin: 0 auto;
-    margin-top: 50px;
-    transition: 0.3s;
+  width: 100px;
+  border: 1px solid #333;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.3s;
 }
 .close:hover{
   background-color: #555;
@@ -225,65 +225,65 @@ nav.globalMenuSp.active {
 /* お問い合せボタン  */
 footer{
   max-width: 1080px;
-    margin: 0 auto;
-    padding: 100px 0 80px;
+  margin: 0 auto;
+  padding: 100px 0 80px;
 }
 .btn-2{
   text-align: center;
 }
 .btn-2 a{
-    background: #99c67e;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 42.5px;
-    color: #fff;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
-    font-size: 20px;
-    box-shadow: 5px 5px 0 #83c1a6;
-    border-radius: 50px;
+  background: #99c67e;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 42.5px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 5px 5px 0 #83c1a6;
+  border-radius: 50px;
 }
 .btn-2 a:hover {
-    background-color: #83c1a6;
-    box-shadow: 0 0 0;
-    transform: translate(5px, 5px);
+  background-color: #83c1a6;
+  box-shadow: 0 0 0;
+  transform: translate(5px, 5px);
 }
 .btn-2 a:after {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transition: 0.2s ease-in-out;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transition: 0.2s ease-in-out;
+  transform: translateY(-50%);
 }
 
 .btn-2 img{
-    width: 102.2px;
+  width: 102.2px;
 }
 .contact-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-wrap{
-    display: flex;
-    justify-content: space-between;
-    padding: 115px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 115px 10px 0;
 }
 
 /* フッターナブボタン */
 
 .footer-title a{
-    display: flex;
-    align-items: center;
-    color:#938159;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    padding:10px 30px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  color:#938159;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  padding:10px 30px;
+  /* position: relative; */
 }
 
 /* 三角矢印 */
@@ -319,19 +319,19 @@ footer{
 /* ___________________________________ */
 
 .footer-nav {
-    display: flex;
-    flex-wrap: wrap;/*スマホ表示折り返し用*/
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用*/
 }
 .footer-nav li a{
-    display: flex;
-    align-items: center;
-    padding:10px 30px;
-    text-decoration: none;
-    color: #333;
-    position: relative;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding:10px 30px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 .footer-nav span{
@@ -346,26 +346,26 @@ footer{
 }
 
 .footer-nav li{
-    margin-bottom:20px;
-    margin-left: 10px;
+  margin-bottom:20px;
+  margin-left: 10px;
 }
 .footer-nav li a::after {
-    content: '';
-    /*絶対配置で線の位置を決める*/
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    /*線の形*/
-    width: 80%;
-    height: 1px;
-    background:#333;
-    /*アニメーションの指定*/
-    transition: all .3s;
-    transform: scale(0, 1);/*X方向0、Y方向1*/
-    transform-origin: center top;/*上部中央基点*/
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形*/
+  width: 80%;
+  height: 1px;
+  background:#333;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
 }
 .footer-nav li a:hover::after {
-    transform: scale(1, 1);/*X方向にスケール拡大*/
+  transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 .footer-title-sp{
   display: none;

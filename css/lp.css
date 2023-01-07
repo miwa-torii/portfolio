@@ -172,6 +172,7 @@ nav.globalMenuSp.active {
     height: 100%;
     left: 0;
     top: 0;
+    z-index: 1;
     
 }
 .overlay{
@@ -180,7 +181,7 @@ nav.globalMenuSp.active {
     height: 100%;
     background: rgba(0,0,0,0.5);
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .main{
@@ -189,7 +190,7 @@ nav.globalMenuSp.active {
     width: 900px;
     margin: 0 auto;
     background: #fff;
-    z-index: 2;
+    z-index: 3;
 }
 .content{
     padding: 100px 25px;
@@ -249,7 +250,7 @@ footer{
 }
 .btn-2{
     text-align: center;
-  }
+}
 
 .btn-2 a{
     background: #99c67e;
@@ -308,7 +309,7 @@ footer{
     letter-spacing: 0.1em;
     font-weight: 600;
     padding:10px 30px;
-    position: relative;
+    /* position: relative; */
 }
 /* 三角矢印 */
 .footer-title span{
@@ -320,8 +321,8 @@ footer{
     border-color: #938159;
     display: flex;
     margin-left: 10px;
-  }
-  .footer-title a::after {
+}
+.footer-title a::after {
     content: '';
     /*絶対配置で線の位置を決める*/
     position: absolute;
@@ -335,12 +336,12 @@ footer{
     transition: all .3s;
     transform: scale(0, 1);/*X方向0、Y方向1*/
     transform-origin: center top;/*上部中央基点*/
-  }
-  .footer-title a:hover::after {
+}
+.footer-title a:hover::after {
     transform: scale(1, 1);/*X方向にスケール拡大*/
-  }
-  
-  /* ___________________________________ */
+}
+
+/* ___________________________________ */
 
 .footer-nav {
     display: flex;
