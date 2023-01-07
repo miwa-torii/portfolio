@@ -439,13 +439,35 @@ h2 span {
 .about-box {
     display: flex;/* テキストの横並び配置 */
 }
-.abc li{
+.about-box p{
+    display: flex;
+    font-size: 18px;
+    line-height: 1.75;
+}
+/* 出身、好きなこと、スキルの均等配置 */
+.about-box span{
+    display: block;
+    text-align-last: justify;
+    width: 90px;
+    font-feature-settings: normal;
+    margin-right:5px;
+    color: #83c1a6;
+    font-weight: 600;
+
+}
+/* ・・・以降のテキストの右揃え */
+.about-text2{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15px;
+}
+/* .abc li{
     font-weight: 600;
     color: #83c1a6;
     font-size: 18px;
     font-feature-settings: normal;
     line-height: 1.75;
-}
+} */
 /* .abc li span{
     font-weight: 600;
     color: #83c1a6;
@@ -453,14 +475,14 @@ h2 span {
     font-feature-settings: normal;
     line-height: 1.75;
 } */
-.dot li{
+/* .dot li{
     font-weight: 600;
     color: #83c1a6;
     font-size: 18px;
     font-feature-settings: normal;
     line-height: 1.75;
     margin-left: 15px;
-}
+} */
 
 /* .about-box p {
     display: flex;
@@ -470,13 +492,13 @@ h2 span {
 
 
 /* ・・・以降のテキストの右揃え */
-.about-text2 li{
-    /* display: flex;
-    justify-content: flex-end; */
+/* .about-text2 li{
+    display: flex;
+    justify-content: flex-end;
     margin-left: 15px;
     font-size: 18px;
     line-height: 1.75;
-}
+} */
 
 .about-pic {
     position: absolute;
@@ -601,7 +623,7 @@ footer p {
         display: flex;
         justify-content: center;
     }
-    .about-text2 li{
+    .about-text{
         width: 60%;
     }
     .about-pic {
@@ -897,9 +919,11 @@ footer p {
     }
 
     .about-box-sp p:first-child {
-        display: block;
-        text-align-last: justify;
-        width: 90px;
+        display: flex;
+        justify-content: flex-end;
+        /* display: block; */
+        /* text-align-last: justify; */
+        width: 95px;
         font-feature-settings: normal;
         margin-right: 15px;
         color: #83c1a6;
