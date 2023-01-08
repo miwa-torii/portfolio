@@ -1,57 +1,57 @@
 @charset "utf-8";
+
 body {
-    position: relative;
-    font-family: 'Futura pt','Avenir','Helvetica Neue','Helvetica','Arial',"游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
-    }
+  position: relative;
+  font-family: 'futura-pt','noto-sans-cjk-jp','heisei-kaku-gothic-std','yu-gothic-pr6n','sans-serif';
+}
     
 header{
-    max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 180px;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 180px;
 }
 h1{
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 h2 {
-    position: relative;
-    padding-bottom: 1.5rem;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-  }
+  position: relative;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
   
-  h2:before {
-    position: absolute;
-    bottom: -10px;
-    left: calc(50% - 30px);
-    width: 50px;
-    height: 1px;
-    content: '';
-    background: #333;
-  }
+h2:before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 50px;
+  height: 1px;
+  content: '';
+  background: #333;
+}
 .header-text{
-    font-size: 18px;
-    padding-top: 50px;
+  font-size: 18px;
+  padding-top: 50px;
 }
 /* ハンバーガーメニュー */
 /*ハンバーガーボタン*/
 .hamburger {
-    display : block;
-    position: fixed;
-    z-index : 9999;
-    right : 13px;
-    top   : 12px;
-    width : 42px;
-    height: 42px;
-    cursor: pointer;
-    text-align: center;
-  }
-  .hamburger span {
+  display : block;
+  position: fixed;
+  z-index : 9999;
+  right : 13px;
+  top   : 12px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
     display : block;
     position: absolute;
     width   : 30px;
@@ -61,36 +61,36 @@ h2 {
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition   : 0.3s ease-in-out;
     transition        : 0.3s ease-in-out;
-  }
-  .hamburger span:nth-child(1) {
+}
+.hamburger span:nth-child(1) {
     top: 10px;
-  }
-  .hamburger span:nth-child(2) {
+}
+.hamburger span:nth-child(2) {
     top: 20px;
-  }
-  .hamburger span:nth-child(3) {
+}
+.hamburger span:nth-child(3) {
     top: 30px;
-  }
+}
   
-  /* ナビ開いてる時のボタン */
-  .hamburger.active span:nth-child(1) {
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
     top : 16px;
     left: 6px;
     background :#fff;
-    /* -webkit-transform: rotate(-45deg);
-    -moz-transform   : rotate(-45deg); */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
     transform        : rotate(-45deg);
-  }
+}
   
-  .hamburger.active span:nth-child(2),
-  .hamburger.active span:nth-child(3) {
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
     top: 16px;
     background :#fff;
-    /* -webkit-transform: rotate(45deg);
-    -moz-transform   : rotate(45deg); */
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
     transform        : rotate(45deg);
-  }
-  nav.globalMenuSp {
+}
+nav.globalMenuSp {
     position: fixed;
     z-index : 2;
     top  : 0;
@@ -103,40 +103,40 @@ h2 {
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
     visibility: hidden;
-  }
+}
   
-  nav.globalMenuSp ul {
+nav.globalMenuSp ul {
     width: 100%;
     margin-top: 65px;
-  }
+}
   
-  nav.globalMenuSp ul li {
+nav.globalMenuSp ul li {
     list-style-type: none;
     /* padding: 1rem 0; */
     width: 100%;
     transition: .4s all;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   
-  nav.globalMenuSp ul li:hover{
+nav.globalMenuSp ul li:hover{
     background :#ddd;
-  }
+}
   
-  nav.globalMenuSp ul li a {
+nav.globalMenuSp ul li a {
     display: block;
     color: #fff;
     letter-spacing: 0.1em;
     padding: 1rem 0;/* 上下の余白部分もクリック領域にする */
-  }
+}
   
-  /* このクラスを、jQueryで付与・削除する */
-  nav.globalMenuSp.active {
-    opacity: 100;
-    visibility: visible;
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+  visibility: visible;
+}
 
-  
-  }
+
 .leaf1{
     width: 346.6px;
     /* width: 25.3%; */
@@ -178,8 +178,8 @@ h2 {
 }
 .contact-btn{
     padding-top: 50px;
-
 }
+
 /* お問い合せフォーム */
 form{
     max-width: 1080px;
@@ -210,11 +210,13 @@ form{
     width: 570px;
     height: 60px;
     border: none;
+    font-size: 150%;/* 入力する文字の大きさ */
 }
 .inputs-2{
     width: 570px;
     height: 260px;
     border: none;
+    font-size: 150%;
 }
 .btn-area{
     text-align: center;
@@ -261,6 +263,7 @@ input[type="submit"]:hover {
   .br-sp{
     display: block;
   }
+
   /* お問い合せフォーム */
   .form-container{
     width: 100%;
@@ -290,12 +293,6 @@ input[type="submit"]:hover {
     font-weight: 600;
     color: #fff;
   }
-    
-  /* input[type="submit"]:hover {
-    background: #58412a;
-    cursor: pointer;
-    color: #fff;
-  } */
   
 }
 

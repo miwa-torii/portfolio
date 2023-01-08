@@ -1,8 +1,7 @@
 @charset "utf-8";
 body {
     position: relative;
-    font-family: 'Futura pt','Avenir','Helvetica Neue','Helvetica','Arial',"游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+    font-family: 'futura-pt','noto-sans-cjk-jp','heisei-kaku-gothic-std','yu-gothic-pr6n','sans-serif';
 }
 header{
   max-width: 1080px;
@@ -162,13 +161,21 @@ nav.globalMenuSp.active {
 }
 
 .main{
-  position: relative;
+  /* position: relative; */
+  position: fixed;/* 画面中央で固定 */
   text-align: center;
   width: 500px;
   margin: 0 auto;
   background: #fff;
   z-index: 3;
-  margin-top: 100px;
+  /* 真ん中配置 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .content{
   padding: 100px 25px;

@@ -4,13 +4,9 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Futura PT','Helvetica','Arial',"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif,'ヒラギノ角ゴシック','メイリオ','ＭＳ Ｐゴシック', 'MS PGothic';
+    font-family: 'futura-pt','noto-sans-cjk-jp','heisei-kaku-gothic-std','yu-gothic-pr6n','sans-serif';
 }
 
-/* body {
-    font-family: 'Futura PT', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic'
-} */
 
 .over_flow_hidden {
     overflow: hidden;
@@ -252,7 +248,7 @@ nav ul li:hover{
 h2 {
     font-size: 30px;
     letter-spacing: 0.1em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h2 span {
@@ -450,7 +446,7 @@ h2 span {
     text-align-last: justify;
     width: 90px;
     font-feature-settings: normal;
-    margin-right:5px;
+    margin-right: 10px;
     color: #83c1a6;
     font-weight: 600;
 
@@ -460,45 +456,8 @@ h2 span {
     display: flex;
     justify-content: flex-end;
     margin-left: 15px;
+    letter-spacing: 0.1em;
 }
-/* .abc li{
-    font-weight: 600;
-    color: #83c1a6;
-    font-size: 18px;
-    font-feature-settings: normal;
-    line-height: 1.75;
-} */
-/* .abc li span{
-    font-weight: 600;
-    color: #83c1a6;
-    font-size: 18px;
-    font-feature-settings: normal;
-    line-height: 1.75;
-} */
-/* .dot li{
-    font-weight: 600;
-    color: #83c1a6;
-    font-size: 18px;
-    font-feature-settings: normal;
-    line-height: 1.75;
-    margin-left: 15px;
-} */
-
-/* .about-box p {
-    display: flex;
-    font-size: 18px;
-    line-height: 1.75;
-} */
-
-
-/* ・・・以降のテキストの右揃え */
-/* .about-text2 li{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 15px;
-    font-size: 18px;
-    line-height: 1.75;
-} */
 
 .about-pic {
     position: absolute;
@@ -539,6 +498,7 @@ h2 span {
     padding: 0 100px;
     font-size: 18px;
     line-height: 1.75;
+    letter-spacing: 0.1em;
 }
 
 .leaf3 {
@@ -615,7 +575,7 @@ footer p {
     width: 14.18%; /* width: 192.83px; */
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1280px) {
     .btn-wrap {
         position: relative;
         right: 0;
@@ -914,16 +874,16 @@ footer p {
 
     .about-text-sp {
         display: block;
-        width: 310px;
+        width: 320px;
         margin: 0 auto;
     }
 
     .about-box-sp p:first-child {
-        display: flex;
-        justify-content: flex-end;
+        /* display: flex;
+        justify-content: flex-end; */
         /* display: block; */
         /* text-align-last: justify; */
-        width: 95px;
+        /* width: 95px; */
         font-feature-settings: normal;
         margin-right: 15px;
         color: #83c1a6;
@@ -1091,10 +1051,17 @@ footer p {
     .icon-i-sp {
         display: block;
     }
-    .about-text-sp {
-        padding: 0 10px;
+
+}
+@media screen and (max-width:320px){
+    .future-text{
+        font-size: 15px;
     }
-    
-
-
+    .about-wrap2-text,.about-text2-sp{
+        font-size: 14px;
+    }
+    .about-box-sp p:first-child{
+        margin-right: 0;
+        font-size: 14px;
+    }
 }
