@@ -532,7 +532,7 @@ footer{
     height: 100vh;
   }
   nav.globalMenuSp ul {
-    margin-top: 272px; /* リストを中央に（デバイスの高さーリストの高さ/２） */
+    margin-top: 250px; /* リストを中央に */
   }
   nav.globalMenuSp ul li a {
     font-size: 28px;

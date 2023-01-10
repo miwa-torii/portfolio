@@ -576,7 +576,7 @@ footer{
     height: 100vh;
   }
   nav.globalMenuSp ul {
-    margin-top: 272px; /* リストを中央に（デバイスの高さーリストの高さ/２） */
+    margin-top: 250px; /* リストを中央に（デバイスの高さーリストの高さ/２） */
   }
   nav.globalMenuSp ul li a {
     font-size: 28px;
@@ -587,6 +587,10 @@ footer{
     .btn-2 a {
         box-shadow: none;/* お問い合わせボタンの影を消す */
    }
+   .btn-2 a:hover {
+        background-color: #99c67e;
+        transform: none;
+    }
    .btn-2 a:after {
         transition: none;
         transform: none;

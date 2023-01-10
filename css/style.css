@@ -1044,9 +1044,17 @@ footer p {
         /* お問い合わせボタンの影を消す */
         padding: 10px 22px;
         box-shadow: none;
+        transition: none;
        
     }
+    .btn-2 a:hover {
+        background-color: #99c67e;
+        transform: none;
+    }
     .btn-2 a:after {
+        position: static;
+        top: 0;
+        right: 0;
         transition: none;
         transform: none;
     }
