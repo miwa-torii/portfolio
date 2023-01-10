@@ -168,7 +168,6 @@ nav.globalMenuSp.active {
     background: #58412a;
     filter: drop-shadow(0px 2px 4px #ccc);
     border-radius: 3px;
-    font-family:"游ゴシック体";
     font-size: 14px;
     letter-spacing: 0.1em;
 }
@@ -198,7 +197,7 @@ form{
 }
 .item{
     margin-bottom: 40px;
-    text-align: left;
+    /* text-align: left; */
 }
 .label{
     font-size: 18px;
@@ -272,8 +271,10 @@ input[type="submit"]:hover {
   }
   .form-btn{
     max-width: 320px; /* 入力欄の幅 */
-    margin: 0 auto;
   } 
+  .label{
+    font-size: 16px;
+  }
    
   .inputs{
     width: 320px;
@@ -287,7 +288,7 @@ input[type="submit"]:hover {
     padding: 15px 52.45px;
     border: 1px solid #333;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.1em;
     background: #58412a;
     font-weight: 600;

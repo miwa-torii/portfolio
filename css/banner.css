@@ -199,7 +199,9 @@ nav.globalMenuSp.active {
   border-bottom: none;
 }
 .text1{
-  text-align-last: justify;
+  /* 文字の均等割付け */
+  text-align-last: justify; /* chromeやFirefoxの指定*/
+  text-justify: inter-ideograph;/* IE・Edge用の独自のプロパティ */
   width: 72px;
 }
 .text p{
@@ -251,6 +253,7 @@ footer{
   font-size: 20px;
   box-shadow: 5px 5px 0 #83c1a6;
   border-radius: 50px;
+  letter-spacing: 0.1em;
 }
 .btn-2 a:hover {
   background-color: #83c1a6;
@@ -290,7 +293,7 @@ footer{
   letter-spacing: 0.1em;
   font-weight: 600;
   padding:10px 30px;
-  /* position: relative; */
+  position: relative;
 }
 
 /* 三角矢印 */
@@ -398,14 +401,14 @@ footer{
     left: 20%;
     top: 45%;
   }
-    h1{
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      padding-top: 0;
-      padding-left: 0;
-      text-align: center;
-      position: relative;
+  h1{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
   }
   h1::before{
     position: absolute;
@@ -425,22 +428,15 @@ footer{
 
   /* お問い合わせボタン */
   .btn-2 a{
-      background: #99c67e;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 23.45px; /* ボタンの大きさ */
-      color: #fff;
-      transition: 0.3s ease-in-out;
-      font-weight: 600;
-      font-size: 16px;
-      box-shadow: 5px 5px 0 #83c1a6;
-      border-radius: 50px;
+    padding: 10px 23.45px; /* ボタンの大きさ */
+    font-size: 16px;
+    width: 160px;
   }
  .btn-2 img{
     width: 64.13px;
   }
+
+
   footer{
       padding: 100px 0 20px;
   }
@@ -543,5 +539,20 @@ footer{
   }
  
 
+}
+@media screen and (max-width:430px){
+  .btn-2 a {
+    box-shadow: none;/* お問い合わせボタンの影を消す */
+ }
+  .footer-nav li a::after {
+    background:#fff;
+    /*ホバーアクションを消す*/
+    transition: none;
+    transform: none;
+
+  }
+  .footer-nav li a:hover::after {
+    transform: none;/*X方向にスケール拡大*/
+  }
 }
 

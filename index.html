@@ -207,7 +207,6 @@
 
     </main>
     <script>
-        //pagetop
         $(function () {
             var topBtn = $('.nav-wrap');
             topBtn.hide();
@@ -216,10 +215,10 @@
             //future部分までスクロールしたら表示
             $(window).scroll(function () {
                 if ($(this).scrollTop() > height) {
-                    //ボタンの表示方法
+                    //ボタンの表示
                     topBtn.fadeIn();
                 } else {
-                    //ボタンの非表示方法
+                    //ボタンの非表示
                     topBtn.fadeOut();
                 }
                 $(function () {
@@ -239,10 +238,10 @@
                 //スクロール位置を取得
                 var scrollY = $('.top-scroll').scrollTop();
                 //background-size+(スクロール位置/3)
-                var bgSize = 70 + (scrollY / 2);
+                var bgSize = 70 + (scrollY / 3);
 
-                //bgSizeが700より小さければ
-                if (bgSize < 900) {
+                //bgSizeが1000より小さければ
+                if (bgSize < 1000) {
                     //background-sizeにbgSizeを設定
                     $('.top-scroll').css('background-size', bgSize + '%');
 
@@ -252,13 +251,10 @@
                             $('.scroll-box').addClass('show');
                         });
                     $('body').removeClass('over_flow_hidden');
-                    // $('.top-scroll').fadeOut();
-                    // $('body').removeClass('over_flow_hidden');
-                    // $('.scroll-box').addClass('show');
-                    // $('.scroll-box').hide().fadeIn('slow');
 
                 }
             });
+            // 木のイラストのページに戻る
             // ページのURLに名前をつけるイメージ
             if (location.search == '?top') {
                 $('.top-scroll').fadeOut('',

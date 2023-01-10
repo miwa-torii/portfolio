@@ -61,7 +61,7 @@ header {
     top: 14%;
     right: 10%;
     animation: anime-orange 2s ease-in-out;
-    animation-delay: 1s;/* アニメが始まるまでの遅延時間 */
+    animation-delay: 3s;/* アニメが始まるまでの遅延時間 */
     animation-fill-mode: backwards;/* 再生後そのまま表示 */
     
 }
@@ -83,7 +83,7 @@ header {
     top: 6%;
     right: 14%;
     animation: anime-perple 2s ease-in-out;
-    animation-delay: 2s;
+    animation-delay: 3.5s;
     animation-fill-mode: backwards;
 }
 
@@ -103,7 +103,7 @@ header {
     top: 26%;
     left: 24%;
     animation: anime-pink 2s ease-in-out;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: backwards;
 }
 
@@ -123,7 +123,7 @@ header {
     top: 21%;
     left: 24%;
     animation: anime-yellow 2s ease-in-out;
-    animation-delay: 4s;
+    animation-delay: 4.5s;
     animation-fill-mode: backwards;
 }
 
@@ -563,7 +563,6 @@ footer p {
     text-align: center;
     color: #938159;
     font-size: 16px;
-    font-family: Futura pt;
     font-weight: 600;
 
 }
@@ -945,6 +944,7 @@ footer p {
         font-size: 16px;
         box-shadow: 5px 5px 0 #83c1a6;
         border-radius: 50px;
+        letter-spacing: 0.1em;
     }
 
     footer {
@@ -953,7 +953,7 @@ footer p {
     }
 
     footer p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .leaf4 {
@@ -1010,12 +1010,10 @@ footer p {
         display: block;
         padding-left: 10%;
         margin-top: -120px;
-
     }
 
     .sp-title h1 {
         font-size: 48px;
-
     }
 
     .sp-title p {
@@ -1024,11 +1022,28 @@ footer p {
         padding-left: 30px;
 
     }
+    .btn-1-sp a::after {
+        background: #fff;
+        /*ホバーアクションを消す*/
+        transition: none;
+        transform: none;
+    }
+
+    .btn-1-sp a:hover::after {
+        transform: none;
+        /*右がX方向に拡大する値*/
+    }
     .about-pic {
         position: static;
         width: 95%;
         margin: 0 auto;
         padding-bottom: 65px;
+    }
+    .btn-2 a {
+        /* お問い合わせボタンの影を消す */
+        padding: 15px 22px;
+        box-shadow: none;
+       
     }
 }
 
