@@ -544,6 +544,14 @@ footer{
   .btn-2 a {
     box-shadow: none;/* お問い合わせボタンの影を消す */
  }
+ .btn-2 a:hover {
+    background-color: #99c67e;
+    transform: none;
+  }
+  .btn-2 a:after {
+    transition: none;
+    transform: none;
+  }
   .footer-nav li a::after {
     background:#fff;
     /*ホバーアクションを消す*/

@@ -600,7 +600,6 @@ footer{
         /*ホバーアクションを消す*/
         transition: none;
         transform: none;
-
     }
   .footer-nav li a:hover::after {
         transform: none;/*X方向にスケール拡大*/
