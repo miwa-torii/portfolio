@@ -221,6 +221,7 @@ form{
     text-align: center;
     margin: 70px 0;
 }
+
 input[type="submit"] {
   appearance: none;/* inputタグに対するOSによって異なる標準的スタイルのリセット */
   -webkit-appearance: none;
